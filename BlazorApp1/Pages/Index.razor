@@ -1,0 +1,22 @@
+﻿@page "/"
+@using BlazorApp1.Logic;
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+
+<h3>@_values.Rand1</h3>
+<h3>@_values.Rand2</h3>
+
+@code {
+    // without dependency injection
+    private Values _values;
+
+    protected override void OnInitialized()
+    {
+        _values = new();
+    }
+}
