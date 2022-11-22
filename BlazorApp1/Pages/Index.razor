@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using BlazorApp1.Logic;
+@inject IValues _values;
 
 <PageTitle>Index</PageTitle>
 
@@ -13,10 +14,14 @@ Welcome to your new app.
 
 @code {
     // without dependency injection
-    private Values _values;
+    //private Values _values;
 
-    protected override void OnInitialized()
-    {
-        _values = new();
-    }
+    //protected override void OnInitialized()
+    //{
+    //    _values = new();
+    //}
+
+    // (!) with dependency injection and injection
+
+    // NO CODE REQUIRED
 }
